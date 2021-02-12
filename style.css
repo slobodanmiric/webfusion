@@ -9,8 +9,17 @@ mixins
 /***************
 basic styles
 ***************/
+body {
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  background: #0b090a;
+}
+
 /***************
-nav
+header
 ***************/
+header {
+  background-image: url(img/banner.jpg);
+}
 
 /*# sourceMappingURL=style.css.map */

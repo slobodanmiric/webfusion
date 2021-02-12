@@ -12,15 +12,37 @@ $middlegray: #b1a7a6;
 $gray: #d3d3d3;
 $lightgray: #f5f3f4;
 $white: #ffffff;
-$fontFamily: 'Source Sans Pro', sans-serif;
+$fontFamily: 'Source Sans Pro',
+sans-serif;
+$fontSize: 16px;
 /***************
 mixins
 ***************/
-
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+@mixin img($height) {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: $height;
+}
 /***************
 basic styles
 ***************/
+body {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    background: $black;
+}
 
 /***************
-nav
+header
 ***************/
+header {
+    background-image: url(img/banner.jpg);
+}
