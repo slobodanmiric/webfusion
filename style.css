@@ -1,25 +1,33 @@
-@charset "UTF-8";
 @import url(‘https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;700&display=swap’);
 /***************
 variables
 ***************/
-/***************
-mixins
-***************/
+:root {
+    --black: #0b090a;
+    --primary: #161a1d;
+    --accents: #e5383b;
+    --red2: #ba181b;
+    --red3: #a4161a;
+    --red4: #660708;
+    --middlegray: #b1a7a6;
+    --gray: #d3d3d3;
+    --lightgray: #f5f3f4;
+    --white: #ffffff;
+    --fontFamily: 'Source Sans Pro',
+    sans-serif;
+    --fontSize: 16px;
+}
 /***************
 basic styles
 ***************/
 body {
-  font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
-  background: #0b090a;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    background: $black;
 }
-
 /***************
 header
 ***************/
 header {
-  background-image: url(img/banner.jpg);
+    background-image: url(img/banner.jpg);
 }
-
-/*# sourceMappingURL=style.css.map */
