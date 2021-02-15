@@ -20,14 +20,40 @@ variables
 /***************
 basic styles
 ***************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    font-size: $fontSize;
-    font-family: $fontFamily;
-    background: $black;
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    background: var(--black);
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+.flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /***************
 header
 ***************/
 header {
     background-image: url(img/banner.jpg);
+    font-size: 3rem;
+}
+header a {
+    color: var(--white);
+}
+.logo span {
+    
 }
