@@ -16,6 +16,7 @@ variables
     --fontFamily: 'Source Sans Pro',
     sans-serif;
     --fontSize: 16px;
+    --transition: .4s ease;
 }
 /***************
 basic styles
@@ -30,6 +31,7 @@ body {
     font-family: var(--fontFamily);
     background: var(--black);
     color: var(--white);
+    line-height: 1.6;
 }
 .container {
     max-width: 1140px;
@@ -41,14 +43,17 @@ body {
 .pt {
     padding-top: 60px;
 }
-h2 {
+.headings {
     color: var(--white);
     font-size: 3rem;
+    
+    text-shadow: 0 0 25px var(--accents);
 }
 .flexBetween {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 .flexCenter {
     display: flex;
@@ -151,5 +156,61 @@ services
 .services .container div:nth-child(4) i:hover {
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
 }
+.services h3 {
+    font-size: 2rem;
+    padding: 30px 0;
+}
+/***************
+uvp
+***************/
+.uvp {
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(img/contact.jpg);
+    padding: 200px 0;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 30%, 100% 0, 100% 70%, 0% 100%);
+    text-align: center;
+    background-attachment: fixed;
+}
+/***************
+projects
+***************/
+.projects article {
+    position: relative;
+    overflow: hidden;
+}
+.projects article img:hover {
+    opacity: .6;
+    cursor: pointer;
+}
+.projects .icons {
+    position: absolute;
+    bottom: -10rem;
+    background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8));
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    transition-duration: 1s;
+}
+.projects article {
+    flex: 0 0 25%;
+}
+.projects article img {
+    width: 100%;
+    display: block;
+}
+.projects article:hover .icons {
+    bottom: 0;
+}
+.projects i {
+    color: var(--accents);
+    font-size: 1.7rem;
+    margin: 0 10px;
+}
+.projects i:hover {
+    color: var(--red2);
+    transition: var(--transition);
+}
+
 
 
