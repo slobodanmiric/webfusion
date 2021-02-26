@@ -38,6 +38,9 @@ body {
 .py {
     padding: 100px 0;
 }
+.pt {
+    padding-top: 60px;
+}
 h2 {
     color: var(--white);
     font-size: 3rem;
@@ -52,6 +55,9 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+/***************
+mainHeader
+***************/
 .mainHeader {
     background-image: url(img/banner.jpg);
     background-position: center;
@@ -109,3 +115,36 @@ header nav {
 .mainHeader .headerText p {
     font-size: 2rem;
 }
+/***************
+services
+***************/
+.services .container div {
+    flex: 0 0 23%;
+    text-align: center;
+}
+.services i {
+    font-size: 4rem;
+    background: var(--accents);
+    padding: 60px;
+}
+.services i:hover {
+/*    color: var(--black);*/
+/*    transition: .5s ease;*/
+}
+.services .container div:nth-child(1) i {
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+.services .container div:nth-child(1) i:hover {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.services .container div:nth-child(2) i {
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+}
+.services .container div:nth-child(3) i {
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.services .container div:nth-child(4) i {
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+
