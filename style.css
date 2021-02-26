@@ -29,10 +29,18 @@ body {
     font-size: var(--fontSize);
     font-family: var(--fontFamily);
     background: var(--black);
+    color: var(--white);
 }
 .container {
     max-width: 1140px;
     margin: auto;
+}
+.py {
+    padding: 100px 0;
+}
+h2 {
+    color: var(--white);
+    font-size: 3rem;
 }
 .flexBetween {
     display: flex;
