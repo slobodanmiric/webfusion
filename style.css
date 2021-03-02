@@ -266,5 +266,51 @@ pricing
 .pricing ul {
     padding: 0 40px;
 }
-
+.backSide {
+    position: absolute;
+    top: 0;
+    background: var(--accents);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px var(--accents);
+    flex-direction: column;
+}
+.backSide h4 {
+    font-size: 6rem;
+    font-weight: 300;
+    color: var(--white);
+    margin-bottom: 60px;
+}
+.backButton {
+    background: var(--white);
+    border: none;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.backButton:hover {
+    background: var(--primary);
+    color: var(--white);
+    transition: var(--transition);
+}
+.navButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255,255,255,.9);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+}
+.navButton:hover {
+    background: var(--primary);
+    color: var(--white);
+    transition: var(--transition);
+}
 
