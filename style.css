@@ -43,6 +43,9 @@ body {
 .pt {
     padding-top: 60px;
 }
+.pb {
+    padding-bottom: 60px;
+}
 .headings {
     color: var(--white);
     font-size: 3rem;
@@ -217,6 +220,51 @@ priceText
 .priceText {
     text-align: center;
 }
-
+/***************
+pricing
+***************/
+.pricing {
+    color: var(--primary);
+}
+.pricing .cardWrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    flex: 0 0 25%;
+    position: relative;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.frontSide {
+    text-align: center;
+    background: var(--white);
+    border-radius: 10px;
+    opacity: .9;
+}
+.frontSide h3 {
+    font-size: 1.7rem;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: var(--black);
+    color: var(--white);
+    padding: 10px;
+}
+.pricing ul li {
+    font-size: 1.3rem;
+    list-style: none;
+    margin: 30px 0;
+    border-bottom: 1px solid var(--accents);
+    padding-bottom: 20px;
+}
+.pricing ul li:last-child {
+    border: none;
+}
+.pricing ul {
+    padding: 0 40px;
+}
 
 
