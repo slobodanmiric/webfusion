@@ -211,6 +211,12 @@ projects
     color: var(--red2);
     transition: var(--transition);
 }
+/***************
+priceText
+***************/
+.priceText {
+    text-align: center;
+}
 
 
 
