@@ -63,6 +63,17 @@ body {
     justify-content: center;
     align-items: center;
 }
+button  {
+    border: none;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+button:hover {
+    transition: var(--transition);
+}
 /***************
 mainHeader
 ***************/
@@ -326,4 +337,34 @@ pricing
     opacity: .9;
     transition-duration: .3s;
 }
+/*************
+footer
+*************/
+footer {
+    background-image: url(img/footer.png);
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+}
+footer form {
+    flex-direction: column;
+    width: 40%;
+}
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--accents);
+}
 
+form button  {
+    background: var(--accents);
+
+}
+form button:hover {
+    background: var(--white);
+    color: var(--primary);
+    transition: var(--transition);
+}
