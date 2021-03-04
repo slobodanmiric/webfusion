@@ -278,6 +278,8 @@ pricing
     border-radius: 10px;
     box-shadow: 0 0 25px var(--accents);
     flex-direction: column;
+    transform: translateZ(-1rem) translateX(1rem);
+    opacity: .5;
 }
 .backSide h4 {
     font-size: 6rem;
@@ -311,9 +313,17 @@ pricing
     cursor: pointer;
     border: none;
 }
-.navButton:hover {
-    background: var(--primary);
-    color: var(--white);
-    transition: var(--transition);
+.cardChange .frontSide {
+    transform: translateZ(-1rem) translateX(1rem);
+    box-shadow: 0 0 30px var(--white);
+    opacity: .5;
+    z-index: 0;
+    transition-duration: .3s;
+}
+.cardChange .backSide {
+    transform: translateZ(0rem) translateX(0rem);
+    box-shadow: 0 0 30px var(--primary);
+    opacity: .9;
+    transition-duration: .3s;
 }
 
