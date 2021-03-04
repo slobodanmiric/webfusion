@@ -344,7 +344,27 @@ footer {
     background-image: url(img/footer.png);
     background-position: center;
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
+    animation: footer 15s infinite;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+    padding-top: 150px;
+}
+@keyframes footer {
+    0% {
+        background-color: var(--accents);
+    }
+    25% {
+        background-color: var(--red2);
+    }
+    50% {
+        background-color: var(--red3);
+    }
+    75% {
+        background-color: var(--red4);
+    }
+    100% {
+        background-color: var(--accents);
+    }
 }
 footer form {
     flex-direction: column;
@@ -356,12 +376,12 @@ form textarea {
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 10px;
-    border: 2px solid var(--accents);
+    border: 2px solid var(--primary);
 }
 
 form button  {
-    background: var(--accents);
-
+    background: var(--primary);
+    color: var(--white);
 }
 form button:hover {
     background: var(--white);
