@@ -477,3 +477,6 @@ tabovi
 .tabovi .col-2 p {
     padding: 20px 0;
 }
+#phpView, #wpView, #phpViewImg, #wpViewImg {
+    display: none;
+}
