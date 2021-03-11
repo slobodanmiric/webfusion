@@ -439,4 +439,41 @@ team
     width: 30%;
     margin: 20px auto;
 }
-
+/*************
+tabovi
+*************/
+.tabovi .links {
+    text-align: center;
+}
+.tabovi .links a {
+    color: var(--accents);
+    font-size: 2rem;
+    margin: 0 5px;
+    border-bottom: 2px solid var(--accents);
+    display: inline-block;
+    width: 250px;
+    cursor: pointer;
+}
+.tabovi .links a:hover {
+    color: var(--white);
+    border-bottom: 2px solid var(--white);
+}
+.tabovi .tabs {
+    margin-top: 40px;
+}
+.tabovi .col-2 {
+    flex: 0 0 68%;
+}
+.tabovi .col-1 {
+    flex: 0 0 28%;
+}
+.tabovi img {
+    width: 100%;
+}
+.tabovi h2 {
+    font-size: 3rem;
+    color: var(--accents);
+}
+.tabovi .col-2 p {
+    padding: 20px 0;
+}
